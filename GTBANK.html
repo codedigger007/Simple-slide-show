@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gtbank.com/personal-banking</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="GTBANK.css">
+       
+    </head>
+    <body>
+            <ul class="flag-list" id="bros" name="brod">
+                <li class="flagged"><div class="flag space" style="background-image: url(https://cdn.britannica.com/48/5048-004-EA370A21/Flag-Cote-dIvoire.jpg);"></div>Cote D'Ivoire</li>
+                <li class="flagged"><div class="flag space" style="background-image: url(https://cdn.britannica.com/52/5052-004-C6FC398B/Flag-of-The-Gambia.jpg)"></div>Gambia</li>
+                <li class="flagged"><div class="flag space" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/255px-Flag_of_Ghana.svg.png)"></div>Ghana</li>
+                <li class="flagged"><div class="flag space" style="background-image: url(https://cdn.britannica.com/15/15-004-B5D6BF80/Flag-Kenya.jpg)"></div>Kenya</li>
+                <li class="flagged"><div class="flag space" style="background-image: url(https://cdn.britannica.com/60/5060-004-F0C9CBBF/Flag-Liberia.jpg)"></div>Liberia</li>
+                <li class="flagged"><span class="fa fa-check space" style="font-size: 35px;"></span>Nigeria</li>
+                <li class="flagged"><div class="flag space" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Rwanda.svg/1280px-Flag_of_Rwanda.svg.png)"></div>Rwanda</li>
+                <li class="flagged"><div class="flag space" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Sierra_Leone.svg/2560px-Flag_of_Sierra_Leone.svg.png)"></div>Sierra Leone</li>
+                <li class="flagged"><div class="flag space" style="background-image: url(https://cdn.britannica.com/20/20-004-EB20A026/Flag-Tanzania.jpg)"></div>Tanzania</li>
+                <li class="flagged"><div class="flag space" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg)"></div>Uganda</li>
+                <li class="flagged"><div class="flag space" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png)"></div>Unitied Kingdom</li>
+            </ul>
+            
+
+       
+        <header>
+            <div class="notice">
+                <h3>
+                   <strong style="color: #c24e00; font-style: bold;">Important Notice:</strong>
+                    Please be mindful of fake sites run by fraudulent parties posing as Guaranty Trust Bank LTD or its affiliates. Do not disclose your personal information and financial details to anyone online or anywhere else.
+                </h3>
+
+            </div>
+        </header>
+        <main style="position: relative;">
+            <div class="nav-holder">
+                <form id="show-form" style="position: absolute; width: 80%; height: 100%; display: none; align-items: center; z-index: 100; padding: 0; margin: 0; padding-left: 5%; padding-right: 5%;">
+                    <input style="width: 100%; height: 100%; border: none; outline: none; background-color: rgb(250, 30, 0); padding: 0; margin: 0; color: white; font-size: 25px;"/>
+                    <label><span id="close-search" class="fa fa-times" style="font-size: 25px; color: #f3f3f3; transform: translate(-200%);" onclick="closeSearchBar()"></span></label>
+                </form>
+                <div class="navs">
+                    <ul class="nav-list">
+                        <li id="shown" class="the-list" onclick="showFlagList()"><div class="flag-holder"><div class="flag" style="background-image: url('https://cdn.britannica.com/68/5068-004-72A3F250/Flag-Nigeria.jpg');"></div><span class="fa fa-angle-down" style='margin-left: 0.3vw; color: gray; font-size: 20px; font-weight: bold;'></span></div></li>
+                        <li class="the-list locator-item" onclick="LocateList()" value="runIt">Locate <span class="fa fa-angle-down" style='margin-left: 0.01%'></span>
+                            <ul id="locate" class="locator">
+                                <li class="flagged branch"><span class="fa fa-university space" style="font-size: 10px;"></span>Locate a branch</li>
+                                <li class="flagged branch"><span class="fa fa-credit-card-alt space" style="font-size: 10px;"></span>Locate an ATM</li> 
+                            </ul>
+                        </li>
+                        <li class="the-list">Media</li>
+                        <li id="help-centre" class="the-list locator-item">Help Centre <span class="fa fa-angle-down" style='margin-left: 0.01%'></span>
+                            <ul id="helps" class="locator">
+                                <li class="help-service"><p>Complaints & Enquiries</p></li>
+                                <li class="help-service"><p>Dispense Error</p></li>
+                                <li class="help-service"><p>Self Service Portal (Reactivation, Upgrade or Update Accout Information)</p></li>
+                                <li class="help-service"><p>How-To Videos</p></li>
+                                <li class="help-service"><p>Help-Topics</p></li>
+                                <li class="help-service"><p>Contact Us</p></li> 
+                            </ul>
+                        </li>
+                        <li class="the-list">Security</li>
+                        <li class="the-list" id="search"><span class="fa fa-search" style='margin-left: 0;'></span></li>
+                        <li></li>
+                        
+                    </ul>
+                    <div class="nav">
+                        <div>
+                            <span class="fa fa-lock" style="margin-right: 10%; font-size: 30px; color: rgb(180, 40, 0); text-shadow: -3px 0 white, 0 1px white, 3px 0 white, 0 -3px white;"></span>
+                            <h3 style="margin-right: 5%; color: white">Login</h3>
+                            <span class="fa fa-angle-right" style="font-size: 30x; font-weight: bolder; color: white"></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <div style="width: 10%; height: 25vh; position: absolute; top: 2px; right: 5%; background-image:url(https://www.gtbank.com/uploads/general/social-card.png); background-position: center; background-size: cover; background-repeat: no-repeat;" ></div>
+            <div style="padding-left: 5%;">
+                <ul class="profile-hold" id="prof">
+                    <li cLass="profile"><span class="fa fa-home"></span></li>
+                    <li cLass="profile">Personal</li>
+                    <li cLass="profile">Business</li>
+                    <li cLass="profile">About Us</li>
+                    <li cLass="profile">Investor Relations</li>
+                    <li cLass="profile">Open an Account</li>
+                </ul>
+            </div>
+            <div class="under-profile">
+                <div id="profile-list-holder">
+                    <ul class="profile-list" id="first-list">
+                        <li class="profile-list-item">Accounts <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Services <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Cards <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Loans <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Ways To Bank <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Non Resident Nigerian (NRN) Service <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Private Banking <span class="fa fa-angle-right aro"></span></li>
+                    </ul>
+                    <ul class="profile-list" id="second-list">
+                        <li class="profile-list-item">Accounts <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">SME Banking <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Business Banking <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Commercial Banking <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Corporate Banking <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">International Trades <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Cards <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Services <span class="fa fa-angle-right aro"></span></li>
+                    </ul>
+                    <ul class="profile-list" id="third-list">
+                        <li class="profile-list-item">Our Company <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Careers <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Corporate Social Responsibility <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">COVID-19 Guidance <span class="fa fa-angle-right aro"></span></li>
+                    </ul>
+                    <ul class="profile-list" id="fourth-list">
+                        <li class="profile-list-item">Proposed Corporate Re-organization <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Corporate Information <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Financial Information <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Investor News <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Outlook & Insights <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Events <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Annual Reports <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Shareholder Information <span class="fa fa-angle-right aro"></span></li>
+                        <li class="profile-list-item">Private Banking <span class="fa fa-angle-right aro"></span></li>
+                    </ul>
+                </div>
+                <div id="yesterday-today">
+                    <h3>
+                        Yesterday, today and tomorrow
+                    </h3>
+                    <p>
+                        For life’s choices and changes, we’re by your side with help and guidance.
+                    </p>
+                    <button id="the-button">
+                        Show me how <span class="fa fa-long-arrow-right" id="the-span"></span>
+                    </button>
+                </div>
+            </div>
+            <div id="interests">
+                <h2>
+                    What are you interested in?
+                </h2>
+                <div id="interest-holder">
+                    <div class="interested"><p>Accounts</p></div>
+                    <div class="interested"><p>Cards</p></div>
+                    <div class="interested"><p>Ways to Bank</p></div>
+                    <div class="interested"><p>NRN Services</p></div>
+                    <div class="interested"><p>Private Banking</p></div>
+                    <div class="interested"><p>More Products & Services</p></div>
+                </div>
+            </div>
+            <header id="preferred-holder">
+                <div class="preferred">
+                    <div class="interested stat"><p>Accounts</p></div>
+                    <div class="interested stat"><p>Cards</p></div>
+                    <div class="interested stat"><p>Ways to Bank</p></div>
+                    <div class="interested stat"><p>NRN Services</p></div>
+                    <div class="interested stat"><p>Private Banking</p></div>
+                    <div class="interested stat"><p>More Products & Services</p></div>
+                </div>
+                <div class="preferred chaned">
+                    <div class="interested stat underneath" ><p>Accounts</p><div id="underneath-1"></div></div>
+                    <div class="interested stat underneath"><p>Cards</p><div id="underneath-2"></div></div>
+                </div>
+            </header>
+            <div id="the-hidden-div">
+            <div id="under-the-logic" class="under-logic">
+                <div class="part part-1">
+                    <h1>Accounts</h1>
+                    <p>
+                        Here are your best options for a rewarding banking experience.
+                    </p>
+                    <button>
+                        See all Accounts <span class="fa fa-long-arrow-right"></span>
+                    </button>
+                </div>
+                <div class="part part-2">
+                    <div><span class="fa fa-angle-right"></span> <p>Savings & Investment Accounts</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>Current Accounts</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>Compare Accounts</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>Open an Account</p></div>
+                </div>
+                <div id="div-1" class="part part-3"><div></div></div>
+            </div>
+            <div id="under-the-logic" class="under-logic">
+                <div class="part part-1">
+                    <h1>Cards</h1>
+                    <p>
+                        Get more out of your money with our flexible, value adding and easy-to-use cards.
+                    </p>
+                    <button>
+                        See all Cards <span class="fa fa-long-arrow-right"></span>
+                    </button>
+                </div>
+                <div class="part part-2">
+                    <div><span class="fa fa-angle-right"></span> <p>Naira Debit Cards</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>Dollar Debit Cards</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>Prepaid Cards</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>Compare Cards</p></div>
+                </div>
+                <div id="div-2" class="part part-3"><div style="background-image: url(https://thumbs.dreamstime.com/z/credit-card-front-back-isolated-white-71817562.jpg);"></div></div>
+            </div>
+            <div id="under-the-logic" class="under-logic">
+                <div class="part part-1">
+                    <h1>Ways to Bank</h1>
+                    <p>
+                        Bank anytime, everywhere with our always on e-channels.
+                    </p>
+                    <button>
+                        All ways to Bank <span class="fa fa-long-arrow-right"></span>
+                    </button>
+                </div>
+                <div class="part part-2">
+                    <div><span class="fa fa-angle-right"></span> <p>Bank 737</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>Mobile Banking</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>Internet Banking</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>GTConnect</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>GTAssistant</p></div>
+                </div>
+                <div id="div-2" class="part part-3"><div style="background-image: url(https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwYXBwfGVufDB8fDB8fA%3D%3D&w=1000&q=80);"></div></div>
+            </div>
+            <div id="under-the-logic" class="under-logic">
+                <div class="part part-1">
+                    <h1>NRN Services</h1>
+                    <p>
+                        We are at your service, even when you relocate abroad.
+                    </p>
+                    <button>
+                        Learn More <span class="fa fa-long-arrow-right"></span>
+                    </button>
+                </div>
+                <div class="part part-2">
+                    <div><span class="fa fa-angle-right"></span> <p>Bank 737</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>Mobile Banking</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>Internet Banking</p></div>
+                    <div><span class="fa fa-angle-right"></span> <p>GTConnect</p></div>
+                </div>
+                <div id="div-3" class="part part-3"><div style="height:100%; width: 100%; background-image: url(https://img.olympicchannel.com/images/image/private/t_16-9_3200/primary/x4nglg54r7yzn1pwri3h);"></div></div>
+            </div>
+            <div id="under-the-logic" class="under-logic">
+                <div class="part part-1">
+                    <h1>Private Banking</h1>
+                    <p>
+                        Build on your achievements, fulfil your ambitions and reach your goals with our innovative financial solutions and services designed just for you.
+                    </p>
+                    <button>
+                        See What Sets Us Apart <span class="fa fa-long-arrow-right"></span>
+                    </button>
+                </div>
+            
+                <div id="div-4" class="part part-3"><div style="height:100%; width: 100%; background-image: url(data:image/jpeg;base64,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);"></div></div>
+            </div>
+            
+        </div>
+        </main>
+    </body>
+    <script src="GTBANK.js"></script>
+</html>

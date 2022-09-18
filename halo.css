@@ -1,0 +1,90 @@
+.pop-up {
+    display: none;
+    position: absolute;    
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    background-color: rgb(0,0,60);
+    
+}
+#image-logo {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+nav {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+#text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 50px;
+    padding-top: 75px;
+}
+
+.close-menu {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 50px;
+    background-color: red;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.close {
+    width: 10px;
+    height: 40px;
+    background-color: white;
+    
+}
+
+#first {
+
+    transform: rotate(50deg) translate(6px, 0);
+    align-self: center;
+
+}
+
+#second {
+    transform: rotate(-50deg) translate(-6px, 0);
+    align-self: center;
+}
+
+em {
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+}
+.the-rest {
+    width: 100%;
+    height: calc(100vh - 150px);
+    margin: auto;
+}
+
+.the-rest div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+ul {
+    margin-top: 10vh;
+}
+
+.close-list {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+    list-style: none;
+    color: aliceblue;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.close-list:hover {
+    border: 1px solid gray;
+}
