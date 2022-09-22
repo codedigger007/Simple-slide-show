@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.container {
+    position: relative;
+    width: 60vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 25vh;
+    background-color: black;
+    overflow-x: hidden;
+}
+#slide-container {
+    height: 100%;
+    width: calc(60vw * 4);
+    display: flex;
+    position: absolute;
+    transition-duration: 1000ms;
+}
+
+.slides {
+    height: 100%;
+    width: 60vw;
+}
+.a {
+    background-color: brown;
+}
+
+.b {
+    background-color: blue;
+}
+
+.c {
+    background-color: black;
+}
+
+.d {
+    background-color: orange;
+}
